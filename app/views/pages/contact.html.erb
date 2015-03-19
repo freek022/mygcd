@@ -1,2 +1,54 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<div class="container">
+	<div class="jumbotron">
+        <h1>Contact Us</h1>
+        <p>
+        	Do you have a query about one of our courses? Call or Email any of our campuses and we’ll be delighted to assist.
+        </p>
+      </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Dublin Campus</h2>
+          	<p>
+          		Griffith College Dublin,<br />
+				South Circular Road,<br />
+				Dublin 8, <br />
+				Dublin.
+			</p>
+			<p>
+				<strong>Phone:</strong> +353 1 415 04 00 <br />
+				<%= mail_to "admission@gcd.ie" do %>
+  					<strong>Email: </strong> <span>admission@gcd.ie</span>
+				<% end %>
+			</p>
+        </div>
+        <div class="col-md-4">
+         	<h2>Cork campus</h2>
+          	<p>
+	          	Griffith College Cork,<br />
+				Wellington Road,<br />
+				Cork.
+			</p>
+			<p>
+				<strong>Phone:</strong> +353 21 4507027<br />
+				<%= mail_to "admission@gcc.ie" do %>
+  					<strong>Email: </strong> <span>admission@gcc.ie</span>
+				<% end %>
+			</p>
+       </div>
+        <div class="col-md-4">
+          	<h2>Limerick</h2>
+          	<p>
+          		Griffith College Limerick,<br />
+				O'Connell Avenue,<br />
+				Limerick City,<br />
+				Limerick.
+			</p>
+			<p>	
+				<strong>Phone: </strong>+353 61 310031<br />
+				<%= mail_to "admission@gcl.ie" do %>
+  					<strong>Email: </strong> <span>admission@gcl.ie</span>
+				<% end %>
+			</p>
+        </div>
+      </div>
